@@ -1,9 +1,11 @@
 <?php
-// controller generated with the help of chatgpt 
-namespace app\Http\Controllers;
+// controller generated with the help of chatgpt
+namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-
+use Illuminate\Http\Request;
+use App\Models\Event;
+use Laravel\Prompts\Concerns\Events;
 
 class EventController extends Controller
 {
@@ -18,6 +20,7 @@ class EventController extends Controller
 //    create new event
 public function create(Request $request) {
         $validatedData = $request->validate([
+            'user_id' => 'required|integer',
             'name'=> 'required|max:255',
             'date'=> 'required|date',
             'description'=>'nullable',
@@ -42,6 +45,17 @@ public function delete($id){
         return response()->json(null,204);
 
 }
+
+
+    public function testDbConnection()
+    {
+        try {
+            \DB::connection()->getPdo();
+            return response()->json(['status' => 'Database connection successful']);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
+    }
 
 
 }
