@@ -71,7 +71,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: white;
+    
     margin: 50px 0px;
 }
 .card{
@@ -80,7 +80,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 15px;
-    background-color: #d8d6d6;
+    background-color: #ffffff;
     padding: 20px 0px;
     margin: 40px 0px;
     width: 500px;
@@ -88,6 +88,7 @@
 }
 .card p{
     text-align: center;
+    font-size: 16px;
     width: 80%;
 }
 .card h1{
@@ -99,6 +100,6 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    color: white;
+    color: black;
     width: 100%;
 }

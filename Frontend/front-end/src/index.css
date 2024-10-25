@@ -8,9 +8,18 @@
 h1{
   font-family: "Sixtyfour Convergence";
 }
+h2{
+  font-family: 'Lilita One',sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
 label{
   font-family: 'Roboto',sans-serif;
   font-size: 16px;
+}
+p{
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
 }
 a{
   font-family: 'Lilita One',sans-serif;
