@@ -1,58 +1,16 @@
-function Event() {
-    return (
-      <>
-        <div className="cards">
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div>      
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div> 
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div> 
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div> 
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div> 
-            <div className="card">
-                <h1>Meetup</h1>
-                <p>A little meet up</p>
-                <div className="date-time">
-                    <h2>25-10-2024</h2>
-                    <h2>3:00 AM</h2>
-                </div>
-            </div>      
-        </div>
-      </>
-    );
-  }
-  
-  export default Event;
+import React from 'react';
+
+const Event = ({ name, description, date, time }) => {
+  return (
+    <div className="card">
+      <h1>{name}</h1>
+      <p>{description}</p>
+      <div className="date-time">
+        <h2>{date}</h2>
+        <h2>{time}</h2>
+      </div>
+    </div>
+  );
+};
+
+export default Event;
