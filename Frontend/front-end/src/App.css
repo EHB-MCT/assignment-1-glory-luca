@@ -60,8 +60,45 @@
 .events{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .events h1{
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 50px 0px;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #d8d6d6;
+    padding: 20px 0px;
+    margin: 40px 0px;
+    width: 500px;
+    height: 300px;
+}
+.card p{
+    text-align: center;
+    width: 80%;
+}
+.card h1{
+    text-align: center;
+    width: 80%;
+    margin-top: 0;
+}
+.date-time{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+    width: 100%;
 }
