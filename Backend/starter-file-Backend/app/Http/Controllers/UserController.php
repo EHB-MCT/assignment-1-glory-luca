@@ -1,11 +1,17 @@
 <?php
 // controller generated with the help of chatgpt
-namespace app\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
+use App\Models\User;
 
 class UserController extends Controller
 {
+
+    public function users(){
+        $users = User::all();
+        return response()->json($users);
+}
 
 //    get friends
     public function friends($userId){

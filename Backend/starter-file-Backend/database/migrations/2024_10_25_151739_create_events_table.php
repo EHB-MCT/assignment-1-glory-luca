@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('username');
+            $table->string('name');
             $table->date('date');
-            $table->text('description')->default(false);
+            $table->time('time');
+            $table->string('location');
+            $table->text('description')->nullable();
             $table->enum('visibility', ['public','private']);
             $table->timestamps();
 
