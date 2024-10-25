@@ -23,7 +23,9 @@ public function create(Request $request) {
             'user_id' => 'required|integer',
             'name'=> 'required|max:255',
             'date'=> 'required|date',
-            'description'=>'nullable',
+            'time'=> 'required|date_format:H:i:s',
+            'location'=> 'required|string|max:255',
+            'description'=>'nullable|string',
             'visibility'=>'required|in:Public,Private',
             'recurring'=>'nullable|boolean'
         ]);
