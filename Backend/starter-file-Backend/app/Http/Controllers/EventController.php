@@ -9,7 +9,7 @@ use Laravel\Prompts\Concerns\Events;
 
 class EventController extends Controller
 {
-
+// Test comment for pull request
 
 //    get all events
     public function index() {
